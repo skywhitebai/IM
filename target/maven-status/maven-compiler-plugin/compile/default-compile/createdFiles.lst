@@ -1,0 +1,9 @@
+com\sky\im\dao\CommonUserMapper.class
+com\sky\im\model\CommonUserExample$Criterion.class
+com\sky\im\controller\CommonUserController.class
+com\sky\im\service\ICommonUserService.class
+com\sky\im\model\CommonUserExample$GeneratedCriteria.class
+com\sky\im\service\impl\CommonUserService.class
+com\sky\im\model\CommonUser.class
+com\sky\im\model\CommonUserExample$Criteria.class
+com\sky\im\model\CommonUserExample.class
