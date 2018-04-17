@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.sky.im.common.annotation.Log;
-import com.sky.im.dto.response.BaseResponse;
 import com.sky.im.util.DateUtil;
 import com.sky.im.util.HttpUtil;
 import org.aspectj.lang.JoinPoint;
@@ -20,7 +19,6 @@ import org.aspectj.lang.Signature;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -94,13 +92,10 @@ public class LogAspect {
         if (log != null) {
             operName = log.value();
         }
-
         StringBuilder sb = new StringBuilder();
-
         sb.append("-----------------------")
                 .append(DateUtil.getFormatSSS(startTime))
                 .append("-------------------------------------\n");
-
         sb.append("Controller: ")
                 .append(joinPoint.getTarget().getClass().getName())
                 .append("\n");
@@ -133,7 +128,6 @@ public class LogAspect {
         Exception e=null;
         try{
             result = joinPoint.proceed();
-            logger.info("result:{}", JSONObject.toJSONString(result));
         }catch (Exception ex){
             ex.printStackTrace();
             e=ex;
@@ -146,7 +140,7 @@ public class LogAspect {
             sb.append("执行错误  : ")
                     .append(e.getMessage()).append("\n");
         }else if (result != null) {
-            sb.append("Response  : ")
+            sb.append("result  : ")
                     .append(JSON.toJSONString(result)).append("\n");
         }
         sb.append("-----------------------")

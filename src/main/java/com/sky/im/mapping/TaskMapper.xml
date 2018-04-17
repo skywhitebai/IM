@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sky.im.dao.TaskMapper" >
+  <resultMap id="BaseResultMap" type="com.sky.im.model.Task" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="task_name" property="taskName" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="begin_time_plan" property="beginTimePlan" jdbcType="TIMESTAMP" />
+    <result column="end_time_plan" property="endTimePlan" jdbcType="TIMESTAMP" />
+    <result column="begin_time_actual" property="beginTimeActual" jdbcType="TIMESTAMP" />
+    <result column="end_time_actual" property="endTimeActual" jdbcType="TIMESTAMP" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="progress" property="progress" jdbcType="DECIMAL" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="create_by" property="createBy" jdbcType="BIGINT" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="update_by" property="updateBy" jdbcType="BIGINT" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, task_name, content, begin_time_plan, end_time_plan, begin_time_actual, end_time_actual, 
+    status, progress, remark, create_time, create_by, update_time, update_by
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.sky.im.model.TaskExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from task
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from task
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from task
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.sky.im.model.TaskExample" >
+    delete from task
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.sky.im.model.Task" >
+    insert into task (id, task_name, content, 
+      begin_time_plan, end_time_plan, begin_time_actual, 
+      end_time_actual, status, progress, 
+      remark, create_time, create_by, 
+      update_time, update_by)
+    values (#{id,jdbcType=BIGINT}, #{taskName,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, 
+      #{beginTimePlan,jdbcType=TIMESTAMP}, #{endTimePlan,jdbcType=TIMESTAMP}, #{beginTimeActual,jdbcType=TIMESTAMP}, 
+      #{endTimeActual,jdbcType=TIMESTAMP}, #{status,jdbcType=INTEGER}, #{progress,jdbcType=DECIMAL}, 
+      #{remark,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{createBy,jdbcType=BIGINT}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{updateBy,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.sky.im.model.Task" >
+    insert into task
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="taskName != null" >
+        task_name,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+      <if test="beginTimePlan != null" >
+        begin_time_plan,
+      </if>
+      <if test="endTimePlan != null" >
+        end_time_plan,
+      </if>
+      <if test="beginTimeActual != null" >
+        begin_time_actual,
+      </if>
+      <if test="endTimeActual != null" >
+        end_time_actual,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="progress != null" >
+        progress,
+      </if>
+      <if test="remark != null" >
+        remark,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="createBy != null" >
+        create_by,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+      <if test="updateBy != null" >
+        update_by,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="taskName != null" >
+        #{taskName,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="beginTimePlan != null" >
+        #{beginTimePlan,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endTimePlan != null" >
+        #{endTimePlan,jdbcType=TIMESTAMP},
+      </if>
+      <if test="beginTimeActual != null" >
+        #{beginTimeActual,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endTimeActual != null" >
+        #{endTimeActual,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="progress != null" >
+        #{progress,jdbcType=DECIMAL},
+      </if>
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createBy != null" >
+        #{createBy,jdbcType=BIGINT},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null" >
+        #{updateBy,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.sky.im.model.TaskExample" resultType="java.lang.Integer" >
+    select count(*) from task
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update task
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.taskName != null" >
+        task_name = #{record.taskName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.content != null" >
+        content = #{record.content,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beginTimePlan != null" >
+        begin_time_plan = #{record.beginTimePlan,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.endTimePlan != null" >
+        end_time_plan = #{record.endTimePlan,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.beginTimeActual != null" >
+        begin_time_actual = #{record.beginTimeActual,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.endTimeActual != null" >
+        end_time_actual = #{record.endTimeActual,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.status != null" >
+        status = #{record.status,jdbcType=INTEGER},
+      </if>
+      <if test="record.progress != null" >
+        progress = #{record.progress,jdbcType=DECIMAL},
+      </if>
+      <if test="record.remark != null" >
+        remark = #{record.remark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createTime != null" >
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.createBy != null" >
+        create_by = #{record.createBy,jdbcType=BIGINT},
+      </if>
+      <if test="record.updateTime != null" >
+        update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateBy != null" >
+        update_by = #{record.updateBy,jdbcType=BIGINT},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update task
+    set id = #{record.id,jdbcType=BIGINT},
+      task_name = #{record.taskName,jdbcType=VARCHAR},
+      content = #{record.content,jdbcType=VARCHAR},
+      begin_time_plan = #{record.beginTimePlan,jdbcType=TIMESTAMP},
+      end_time_plan = #{record.endTimePlan,jdbcType=TIMESTAMP},
+      begin_time_actual = #{record.beginTimeActual,jdbcType=TIMESTAMP},
+      end_time_actual = #{record.endTimeActual,jdbcType=TIMESTAMP},
+      status = #{record.status,jdbcType=INTEGER},
+      progress = #{record.progress,jdbcType=DECIMAL},
+      remark = #{record.remark,jdbcType=VARCHAR},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      create_by = #{record.createBy,jdbcType=BIGINT},
+      update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+      update_by = #{record.updateBy,jdbcType=BIGINT}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.sky.im.model.Task" >
+    update task
+    <set >
+      <if test="taskName != null" >
+        task_name = #{taskName,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="beginTimePlan != null" >
+        begin_time_plan = #{beginTimePlan,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endTimePlan != null" >
+        end_time_plan = #{endTimePlan,jdbcType=TIMESTAMP},
+      </if>
+      <if test="beginTimeActual != null" >
+        begin_time_actual = #{beginTimeActual,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endTimeActual != null" >
+        end_time_actual = #{endTimeActual,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="progress != null" >
+        progress = #{progress,jdbcType=DECIMAL},
+      </if>
+      <if test="remark != null" >
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createBy != null" >
+        create_by = #{createBy,jdbcType=BIGINT},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null" >
+        update_by = #{updateBy,jdbcType=BIGINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.sky.im.model.Task" >
+    update task
+    set task_name = #{taskName,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      begin_time_plan = #{beginTimePlan,jdbcType=TIMESTAMP},
+      end_time_plan = #{endTimePlan,jdbcType=TIMESTAMP},
+      begin_time_actual = #{beginTimeActual,jdbcType=TIMESTAMP},
+      end_time_actual = #{endTimeActual,jdbcType=TIMESTAMP},
+      status = #{status,jdbcType=INTEGER},
+      progress = #{progress,jdbcType=DECIMAL},
+      remark = #{remark,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      create_by = #{createBy,jdbcType=BIGINT},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      update_by = #{updateBy,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

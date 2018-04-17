@@ -2,6 +2,7 @@ package com.sky.im.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.sky.im.dto.request.AddCommUserRequest;
+import com.sky.im.dto.request.LoginRequest;
 import com.sky.im.dto.response.BaseResponse;
 import com.sky.im.model.CommonUser;
 import com.sky.im.service.ICommonUserService;
@@ -74,6 +75,11 @@ public class CommonUserController {
                     }
                 }
                 , true, true);
+    }
+    @RequestMapping("login")
+    @ResponseBody
+    public BaseResponse login(LoginRequest params) {
+        return commonUserService.login(params);
     }
 }
 
