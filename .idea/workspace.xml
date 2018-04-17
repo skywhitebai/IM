@@ -6,87 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5a9353e-c7bd-472f-ad00-8b09f434bfc4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM.war" afterPath="$PROJECT_DIR$/target/IM.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/annotation/Action.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/annotation/Action.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/annotation/Log.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/annotation/Log.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/annotation/Login.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/annotation/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/annotation/Permission.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/annotation/Permission.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/aspect/LogAspect.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/aspect/LogAspect.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/constant/BaseCodeConstant.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/constant/BaseCodeConstant.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/enums/IBaseEnum.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/enums/IBaseEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/enums/LoginEnum.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/enums/LoginEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/exception/BaseException.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/exception/BaseException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/exception/DefaultExceptionHandler.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/common/exception/DefaultExceptionHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/controller/CommonUserController$1.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/controller/CommonUserController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/controller/CommonUserController$2.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/controller/CommonUserController$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/controller/CommonUserController.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/controller/CommonUserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/dao/CommonUserMapper.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/dao/CommonUserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/dto/request/AddCommUserRequest.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/dto/request/AddCommUserRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/dto/request/CheckRequest.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/dto/request/CheckRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/dto/request/ICheckRequest.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/dto/request/ICheckRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/model/CommonUser.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/model/CommonUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/model/CommonUserExample$Criteria.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/model/CommonUserExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/model/CommonUserExample$Criterion.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/model/CommonUserExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/model/CommonUserExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/model/CommonUserExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/model/CommonUserExample.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/model/CommonUserExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/service/ICommonUserService.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/service/ICommonUserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/service/impl/CommonUserService.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/service/impl/CommonUserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/util/ApiParamCheckUtil.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/util/ApiParamCheckUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/util/DateUtil.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/util/DateUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/util/HttpUtil.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/util/HttpUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/util/RespPackUtil.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/util/RespPackUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/util/ServiceWrapper.class" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/com/sky/im/util/ServiceWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/common/annotation/Action.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/common/annotation/Action.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/common/annotation/Log.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/common/annotation/Log.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/common/annotation/Login.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/common/annotation/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/common/annotation/Permission.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/common/annotation/Permission.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/common/aspect/LogAspect.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/common/aspect/LogAspect.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/common/constant/BaseCodeConstant.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/common/constant/BaseCodeConstant.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/common/enums/IBaseEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/common/enums/IBaseEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/common/enums/LoginEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/common/enums/LoginEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/common/exception/BaseException.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/common/exception/BaseException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/common/exception/DefaultExceptionHandler.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/common/exception/DefaultExceptionHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/controller/CommonUserController$1.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/controller/CommonUserController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/controller/CommonUserController$2.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/controller/CommonUserController$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/controller/CommonUserController.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/controller/CommonUserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/dao/CommonUserMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/dao/CommonUserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/dto/request/AddCommUserRequest.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/dto/request/AddCommUserRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/dto/request/CheckRequest.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/dto/request/CheckRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/dto/request/ICheckRequest.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/dto/request/ICheckRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/dto/response/BaseResponse.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/dto/response/BaseResponse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/model/CommonUser.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/model/CommonUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/model/CommonUserExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/model/CommonUserExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/model/CommonUserExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/model/CommonUserExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/model/CommonUserExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/model/CommonUserExample$GeneratedCriteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/model/CommonUserExample.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/model/CommonUserExample.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/service/ICommonUserService.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/service/ICommonUserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/service/impl/CommonUserService.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/service/impl/CommonUserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/util/ApiParamCheckUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/util/ApiParamCheckUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/util/DateUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/util/DateUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/util/HttpUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/util/HttpUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/util/RespPackUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/util/RespPackUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/sky/im/util/ServiceWrapper.class" afterPath="$PROJECT_DIR$/target/classes/com/sky/im/util/ServiceWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/sky/im/TestMybatis.class" afterPath="$PROJECT_DIR$/target/test-classes/com/sky/im/TestMybatis.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sky/im/common/aspect/LogAspect.java" afterPath="$PROJECT_DIR$/src/main/java/com/sky/im/common/aspect/LogAspect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/sky/im/dto/response/BaseResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/sky/im/dto/response/BaseResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/profiles/dev/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/profiles/dev/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/IM/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/IM/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-    </list>
+    <list default="true" id="b5a9353e-c7bd-472f-ad00-8b09f434bfc4" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -335,7 +255,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -711,7 +631,7 @@
       <workItem from="1523522075895" duration="3506000" />
       <workItem from="1523580731107" duration="13703000" />
       <workItem from="1523845184394" duration="15702000" />
-      <workItem from="1523945802790" duration="653000" />
+      <workItem from="1523945802790" duration="659000" />
     </task>
     <servers />
   </component>
@@ -736,10 +656,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67437000" />
+    <option name="totallyTimeSpent" value="67443000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -756,6 +676,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36796537" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -773,7 +694,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
