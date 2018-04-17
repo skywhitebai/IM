@@ -138,6 +138,4 @@ public class BaseResponse<T> implements Serializable {
 		baseResponse.setData(data);
 		return baseResponse;
 	}
-	
-	
 }

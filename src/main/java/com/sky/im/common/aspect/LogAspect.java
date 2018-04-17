@@ -9,6 +9,7 @@ import java.util.Date;
 import javax.servlet.http.HttpServletRequest;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.sky.im.common.annotation.Log;
 import com.sky.im.dto.response.BaseResponse;
 import com.sky.im.util.DateUtil;
@@ -128,23 +129,35 @@ public class LogAspect {
         if (!StringUtils.isEmpty(operName)) {
             sb.append("operName  : ").append(operName).append("\n");
         }
-        logger.info(sb.toString());
-        Object result = joinPoint.proceed();
+        Object result=null;
+        Exception e=null;
+        try{
+            result = joinPoint.proceed();
+            logger.info("result:{}", JSONObject.toJSONString(result));
+        }catch (Exception ex){
+            ex.printStackTrace();
+            e=ex;
+        }
         endTime = new Date();
-        StringBuilder sbAfter = new StringBuilder();
-        sbAfter.append("CostTime  : ")
+        sb.append("CostTime  : ")
                 .append(endTime.getTime() - startTime.getTime()).append("ms")
                 .append("\n");
-        if (result != null && result instanceof BaseResponse) {
-            sbAfter.append("Response  : ")
+        if(e!=null){
+            sb.append("执行错误  : ")
+                    .append(e.getMessage()).append("\n");
+        }else if (result != null) {
+            sb.append("Response  : ")
                     .append(JSON.toJSONString(result)).append("\n");
-
         }
-        sbAfter.append("-----------------------")
+        sb.append("-----------------------")
                 .append(DateUtil.getFormatSSS(endTime))
                 .append("-------------------------------------\n");
 
-        logger.info(sbAfter.toString());
+        logger.info(sb.toString());
+        if(e!=null){
+           // e.printStackTrace();
+            throw e;
+        }
         return result;
     }
 
