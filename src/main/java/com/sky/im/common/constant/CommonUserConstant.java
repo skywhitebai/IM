@@ -17,6 +17,10 @@ public class CommonUserConstant {
      * 密码错误
      */
     public static final String PASSWORD_ERRO = "密码错误";
+    /**
+     * session
+     */
+    public static final String LOGIN_SESSION = "currentUser";
 
 
 }

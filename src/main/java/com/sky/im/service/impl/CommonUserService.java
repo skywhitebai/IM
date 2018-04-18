@@ -35,7 +35,7 @@ public class CommonUserService implements ICommonUserService {
         }
     }
 
-    public BaseResponse login(LoginRequest params) {
+    public BaseResponse<CommonUser> login(LoginRequest params) {
         StringBuilder sbErro=new StringBuilder();
         if(StringUtils.isEmpty(params.getUserName())){
             sbErro.append(",").append(CommonUserConstant.USER_NAME_EMPTY);

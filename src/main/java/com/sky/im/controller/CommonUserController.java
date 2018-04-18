@@ -1,6 +1,7 @@
 package com.sky.im.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.sky.im.common.constant.CommonUserConstant;
 import com.sky.im.dto.request.AddCommUserRequest;
 import com.sky.im.dto.request.LoginRequest;
 import com.sky.im.dto.response.BaseResponse;
@@ -21,7 +22,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("commonUser")
-public class CommonUserController {
+public class CommonUserController extends  SuperController{
     @Autowired
     ICommonUserService commonUserService;
 
@@ -76,11 +77,8 @@ public class CommonUserController {
                 }
                 , true, true);
     }
-    @RequestMapping("login")
-    @ResponseBody
-    public BaseResponse login(LoginRequest params) {
-        return commonUserService.login(params);
-    }
+
+
 }
 
 

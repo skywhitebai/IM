@@ -10,5 +10,5 @@ public interface ICommonUserService {
 
     BaseResponse add(AddCommUserRequest params);
 
-    BaseResponse login(LoginRequest params);
+    BaseResponse<CommonUser> login(LoginRequest params);
 }
