@@ -62,7 +62,7 @@
         <aop:aspect id="LogAspect" ref="logAspect">
             <!--配置在controller包下所有的类在调用之前都会被拦截 -->
             <aop:pointcut id="log"
-                          expression="execution(* com.sky.im.controller.*.*(..))"/>
+                          expression="execution(* com.sky.oms.controller.*.*(..))"/>
             <!-- 方法前触发<aop:before pointcut-ref="log" method="before"/> -->
             <!-- 方法后触发 <aop:after pointcut-ref="log" method="after"/> -->
             <!-- 环绕触发 -->
